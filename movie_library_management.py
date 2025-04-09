@@ -16,7 +16,11 @@ def save_movies(file_name,movies):
             f.write(data)
 
 def print_menu():
-    pass
+    with open("","r") as f:
+        for data in f.readlines():
+            print(f"{data[0]}\t{data[1]}\t{data[2]}\t{data[3]}")
+
+
 
 
 
